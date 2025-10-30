@@ -7,7 +7,7 @@ Create a network namespace called ```harbor```
 
 Download the ```values.yaml``` file for your specific Harbor installation:
 ```
-wget 
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/harbor-quickstart/refs/heads/main/values.yaml
 ```
 Now, install fresh using your adjusted, minimal ```values.yaml``` file.
 ```
