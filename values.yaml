@@ -1,0 +1,25 @@
+expose:
+  # Type ClusterIP is used so we can port-forward to the service
+  type: clusterIP
+  
+  # --- THIS IS THE FIX ---
+  # Explicitly disable TLS (HTTPS) generation
+  tls:
+    enabled: false
+  
+externalURL: http://localhost:8080
+
+# --- IMPORTANT ---
+# Set your admin password here
+harborAdminPassword: "Harbor12345"
+
+# --- Resource Saving ---
+# Disable resource-heavy components for a test environment
+trivy:
+  enabled: false
+
+notary:
+  enabled: false
+
+chartmuseum:
+  enabled: false
